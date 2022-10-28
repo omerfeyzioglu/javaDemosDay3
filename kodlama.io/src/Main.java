@@ -24,7 +24,8 @@ public class Main {
 
        CategoryManager categoryManager = new CategoryManager(new JdbcCategoryDao(),loggers,categories);
        try{
-           categoryManager.add(new Category(3,"Category4"));
+           categoryManager.add(new Category(3,"Category3"));
+           categoryManager.add(new Category(31,"Category5"));
            categoryManager.add(new Category(3,"Category3"));//already added error
        }catch(Exception e){
            System.out.println("this category already added ");
